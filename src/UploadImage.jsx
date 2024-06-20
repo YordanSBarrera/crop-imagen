@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import FileUpload from "./FileUpload";
 
 const UploadSignature = () => {
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [imageUrl, setImageUrl] = (useState < string) | (null > null);
+  const canvasRef = useRef < HTMLCanvasElement > null;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -33,8 +32,8 @@ const UploadSignature = () => {
   if (!imageUrl) {
     return (
       <div
-        style={{}}
-        //  stack  justifyContent="center" alignItems="center" height="250px"
+      // style={{}}
+      //  stack  justifyContent="center" alignItems="center" height="250px"
       >
         <FileUpload onFileSelect={onUploadFile} />
       </div>
